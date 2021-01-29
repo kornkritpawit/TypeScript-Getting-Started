@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.base",
+  "compilerOptions": {
+    "removeComments": true,
+  },
+  "include": [
+    "./**/*" // **= หาไฟลในsubdirectory แบบ recursive * คือชื่อไรก็ได้ที่จัวหลังเป็น ts
+  ]
+}
