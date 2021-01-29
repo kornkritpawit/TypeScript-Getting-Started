@@ -34,4 +34,7 @@ var logMessage = function (message) { return console.log(message); };
 function logError(err) {
     console.error(err);
 }
+var firstPlayer = new Player();
+firstPlayer.name = 'Lanier';
+console.log(firstPlayer.formatName());
 //# sourceMappingURL=app.js.map

@@ -2,8 +2,12 @@
   "extends": "../tsconfig.base",
   "compilerOptions": {
     "removeComments": true,
+    "outFile": "../js/app.js"
   },
-  "include": [
-    "./**/*" // **= หาไฟลในsubdirectory แบบ recursive * คือชื่อไรก็ได้ที่จัวหลังเป็น ts
+  // "include": [
+  //   "./**/*" // **= หาไฟลในsubdirectory แบบ recursive * คือชื่อไรก็ได้ที่จัวหลังเป็น ts
+  // ]
+  "files": [
+    "./app.ts"
   ]
 }
