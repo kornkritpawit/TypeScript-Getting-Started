@@ -2,11 +2,20 @@
   "extends": "../tsconfig.base",
   "compilerOptions": {
     "removeComments": true,
-    "outFile": "../js/app.js"
+    // "outFile": "../js/app.js"
+    "module": "commonjs",
+    "moduleResolution": "node",
+    // "traceResolution": true,
+    // "baseUrl": "./modules",
+    // "paths": {
+    //   "my_lib": ["./customPath"] //compiler look in baseUrl
+    // },
+    // "rootDirs": [
+    //   "modules",
+    //   "src",
+    //   "ts/modules" 
+    // ] //array of directories that will be combine
   },
-  // "include": [
-  //   "./**/*" // **= หาไฟลในsubdirectory แบบ recursive * คือชื่อไรก็ได้ที่จัวหลังเป็น ts
-  // ]
   "files": [
     "./app.ts"
   ]
